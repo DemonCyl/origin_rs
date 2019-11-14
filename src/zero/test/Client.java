@@ -45,7 +45,7 @@ public class Client {
         int count = 0;
         for (String[] str : data) {
 //            dao.updateData(str[0]);
-            dao.updateTax(str);  // 税率修改
+//            dao.updateTax(str);  // 税率修改
 //            dao.updatePmk(str[0]);
 //            dao.update(str); //233
 //            dao.updateFaj(str);
