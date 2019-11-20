@@ -45,7 +45,7 @@ public class testDao {
 //            "faj24=?,faj33=?,faj62=?,faj68=?,ta_faj32=?,faj31=?,faj66=? where faj02=?";
 
     private final String sql = "update faj_file set faj201=?,faj13=?,faj33=?,faj62=?,faj68=? where faj02 = ?";
-    private final String up_pmn = "update kaijia.FAJ_file set faj20 = 'JAKC01',faj24='JAKC01' where FAJ02 = ?";
+    private final String up_pmn = "update kaijia.ima_file set ima67 = 'C10089047' where ima01 = ?";
 //    private final String update_zy = "update kaijia.pmk_file set pmk25 = '6' where pmk01 = ?";
 
 
