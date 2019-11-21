@@ -45,7 +45,7 @@ public class testDao {
 //            "faj24=?,faj33=?,faj62=?,faj68=?,ta_faj32=?,faj31=?,faj66=? where faj02=?";
 
     private final String sql = "update faj_file set faj201=?,faj13=?,faj33=?,faj62=?,faj68=? where faj02 = ?";
-    private final String up_pmn = "update kaijia.ima_file set ima67 = 'C10089047' where ima01 = ?";
+    private final String up_pmn = "update kaijia.FAJ_file set faj20 = ?,faj24=? where FAJ02 = ?";
 //    private final String update_zy = "update kaijia.pmk_file set pmk25 = '6' where pmk01 = ?";
 
 
@@ -410,10 +410,10 @@ public class testDao {
 
             conn = ConnectionUtil.getConnection();
             ps = (PreparedStatement) conn.prepareStatement(up_pmn);
-            ps.setString(1, str[0].trim());
-//            ps.setString(2, str[0].trim());
+            ps.setString(1, str[1].trim());
+            ps.setString(2, str[1].trim());
 
-//            ps.setString(3, str[0].trim());
+            ps.setString(3, str[0].trim());
 
             ps.executeUpdate();
 
