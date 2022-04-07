@@ -37,7 +37,7 @@ public class Client {
     }
 
     private static void read() {
-        String filePath = "C:\\Users\\YL_Chen.KJ\\Desktop\\233.xlsx";
+        String filePath = "/home/zero/Documents/Book1.xlsx";
         testDao dao = new testDao();
         ArrayList<String[]> data = new ArrayList<>();
         File file = new File(filePath);
@@ -47,7 +47,7 @@ public class Client {
 //            dao.updateData(str[0]);
 //            dao.updateTax(str);  // 税率修改
 //            dao.updatePmk(str[0]);
-            dao.update(str); //233
+            //dao.update(str); //233
 //            dao.updateFaj(str);
             System.out.println(str[0]);
             count += 1;
